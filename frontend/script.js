@@ -2,7 +2,7 @@ const select = document.getElementById('vehiculoSelect');
 const table = document.getElementById('vehiculoTable');
 const tbody = table.querySelector('tbody');
 
-// Función para obtener y mostrar datos del vehículo
+// Funcion para obtener y mostrar datos del vehiculo
 function cargarVehiculo(id) {
     fetch(`http://localhost:5000/api/vehiculo/${id}`)
         .then(res => res.json())
@@ -27,7 +27,7 @@ function cargarVehiculo(id) {
         });
 }
 
-// Cargar automáticamente el primer vehículo al abrir la página
+// Cargar automaticamente el primer vehiculo al abrir la pagina
 cargarVehiculo(select.value);
 
 // Escuchar cambios en el dropdown

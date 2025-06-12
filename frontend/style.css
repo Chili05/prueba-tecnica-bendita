@@ -45,7 +45,7 @@ select:focus {
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
 }
 
-/* Estilo visual del dropdown (solo Firefox) */
+/* Estilo visual del dropdown*/
 select option {
     background-color: #3b82f6;
     color: #fff;
