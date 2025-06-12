@@ -1,0 +1,122 @@
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2.6rem;
+    color: #0f172a;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Select personalizado */
+select {
+    appearance: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+select:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+}
+
+/* Estilo visual del dropdown (solo Firefox) */
+select option {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+/* Tabla */
+table {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 850px;
+    border-collapse: collapse;
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+table:hover {
+    transform: scale(1.01);
+}
+
+/* Cabecera con gradiente */
+thead {
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    color: white;
+}
+
+thead th {
+    padding: 18px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Celdas */
+th, td {
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.95rem;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Mensajes de tabla vacía */
+td[colspan] {
+    color: #6b7280;
+    font-style: italic;
+    background-color: #f9fafb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 12px 10px;
+    }
+
+    select {
+        width: 100%;
+        max-width: 300px;
+    }
+}
